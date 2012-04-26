@@ -15,6 +15,12 @@ SAVEHIST=100000
 setopt extended_history 
 function history-all { history -E 1 }
 
+typeset -A myabbrev
+myabbrev=(
+    "ll"    "| less"
+    "lg"    "| grep"
+)
+
 #abbrev
 setopt share_history
 
