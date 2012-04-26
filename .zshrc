@@ -5,7 +5,6 @@ setopt auto_cd
 setopt extended_glob
 setopt auto_remove_slash
 setopt pushd_ignore_dups
-#PROMPT="%U$USER@%m%%%u "
 RPROMPT="[%~]"
 compinit
 
