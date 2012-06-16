@@ -45,3 +45,5 @@ export LESSOPEN='| $HOME/.source-hilite/src-hilite-lesspipe.sh %s'
 export GREP_OPTIONS='--color=auto'
 
 export CRX_KEY=$HOME/.chrome_ext/key.pem
+
+[[ -s $HOME/.local_profile ]] && source $HOME/.local_profile
