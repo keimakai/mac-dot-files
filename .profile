@@ -34,9 +34,6 @@ export PATH=$PATH:$HOME/tool/phonegap-android/bin
 export PATH=$PATH:$HOME/src/ruby/glitchtweet
 export PATH=$PATH:/usr/local/CrossPack-AVR/bin
 
-export NODE_PATH=/usr/local/lib/node_modules:$HOME/node_modules:$HOME/.npm/libraries:$NODE_PATH
-export PATH=$PATH:$HOME/.npm/npm/bin:$HOME/node_modules/.bin
-
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
 export LESS='-R'
