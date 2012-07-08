@@ -35,6 +35,7 @@ export PATH=$PATH:$HOME/src/ruby/glitchtweet
 export PATH=$PATH:/usr/local/CrossPack-AVR/bin
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+[[ -s $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
 
 export LESS='-R'
 export LESSOPEN='| $HOME/.source-hilite/src-hilite-lesspipe.sh %s'
