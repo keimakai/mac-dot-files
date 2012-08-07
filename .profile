@@ -28,7 +28,6 @@ export 'JAVA_OPTS=-d32'
 
 export PATH=/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/Developer/usr/bin:/usr/X11/bin:$PATH
 export PATH=$HOME/bin:$HOME/local/bin:$PATH
-export PATH=$PATH:$HOME/lib/android-sdk/tools:$HOME/lib/android-sdk/platform-tools
 
 export PATH=$PATH:$HOME/tool/phonegap-android/bin
 export PATH=$PATH:$HOME/src/ruby/glitchtweet
