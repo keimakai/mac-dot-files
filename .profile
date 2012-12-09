@@ -6,8 +6,9 @@ export EDITOR='emacs'
 alias cemacs='open -a /Applications/Emacs.app'
 alias gosh='rlwrap -b "(){}[],#\";| " gosh'
 alias v8='rlwrap -b "(){}[],#\";| " v8'
-alias javac='javac -J-Dfile.encoding=UTF8'
-alias jar='jar -J-Dfile.encoding=UTF8'
+alias javac='LC_ALL=en javac -J-Dfile.encoding=UTF8'
+alias jar='LC_ALL=en jar -J-Dfile.encoding=UTF8'
+alias ant='LC_ALL=en ant'
 
 export MANPATH=/opt/local/man:$MANPATH
 export LIBRARY_PATH=/usr/local/lib:/usr/lib:/opt/local/lib:$LIBRARY_PATH
