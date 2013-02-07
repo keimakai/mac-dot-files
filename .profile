@@ -34,6 +34,8 @@ export PATH=$PATH:$HOME/tool/phonegap-android/bin
 export PATH=$PATH:$HOME/src/ruby/glitchtweet
 export PATH=$PATH:/usr/local/CrossPack-AVR/bin
 
+export PATH=$PATH:/usr/local/heroku/bin
+
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 [[ -s $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
 
