@@ -36,6 +36,8 @@ export PATH=$PATH:/usr/local/CrossPack-AVR/bin
 
 export PATH=$PATH:/usr/local/heroku/bin
 
+export PATH=$PATH:$HOME/.rbenv/bin
+eval "$(rbenv init -)"
 [[ -s $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
 
 export LESS='-R'
