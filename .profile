@@ -10,12 +10,10 @@ alias javac='LC_ALL=en javac -J-Dfile.encoding=UTF8'
 alias jar='LC_ALL=en jar -J-Dfile.encoding=UTF8'
 alias ant='LC_ALL=en ant'
 
-export MANPATH=/opt/local/man:$MANPATH
-export LIBRARY_PATH=/usr/local/lib:/usr/lib:/opt/local/lib:$LIBRARY_PATH
-export LD_LIBRARY_PATH=/usr/local/lib:/opt/local/lib:/usr/lib:$LD_LIBRARY_PATH
-export C_INCLUDE_PATH=/usr/local/include:/opt/local/include:$C_INCLUDE_PATH
-export CPLUS_INCLUDE_PATH=/usr/local/include:/opt/local/include:$CPLUS_INCLUDE_PATH
-export DYLD_FALLBACK_LIBRARY_PATH=/opt/local/lib
+export LIBRARY_PATH=/usr/local/lib:/usr/lib:$LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/local/lib:/usr/lib:$LD_LIBRARY_PATH
+export C_INCLUDE_PATH=/usr/local/include:$C_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=/usr/local/include:$CPLUS_INCLUDE_PATH
 export BOOST_ROOT=/usr/local/include/boost
 export CC=/usr/bin/gcc-4.2
 export CXX=/usr/bin/g++-4.2
@@ -27,7 +25,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 export 'JRUBY_OPTS=-X-C'
 export 'JAVA_OPTS=-d32'
 
-export PATH=/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/Developer/usr/bin:/usr/X11/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/Developer/usr/bin:/usr/X11/bin:$PATH
 export PATH=$HOME/bin:$HOME/local/bin:$PATH
 
 export PATH=$PATH:$HOME/tool/phonegap-android/bin
