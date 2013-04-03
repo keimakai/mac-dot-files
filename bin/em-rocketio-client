@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require 'rubygems'
-require 'sinatra/rocketio/client'
+require 'eventmachine'
+require 'em-rocketio-client'
 
 if ARGV.empty?
   app_name = File.basename $0
@@ -11,12 +12,11 @@ end
 url = ARGV.shift
 type = ARGV.shift || :websocket
 
-io = Sinatra::RocketIO::Client.new(url, :type => type).connect
-puts "connecting #{url}"
+EM::run do
+  io = EM::RocketIO::Client.new(url, :type => type).connect
+  puts "connecting #{url}"
 
-io.on :* do |event_name, data|
-  puts "(#{io.type})  #{event_name} - #{data.inspect}"
-end
-
-loop do
+  io.on :* do |event_name, data|
+    puts "(#{io.type})  #{event_name} - #{data.inspect}"
+  end
 end
