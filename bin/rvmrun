@@ -1,6 +1,0 @@
-#!/bin/zsh
-rvm_path=/Users/sho/.rvm
-source /Users/sho/.rvm/scripts/rvm
-rvm use $1
-
-zsh -c $2
